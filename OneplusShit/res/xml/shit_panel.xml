@@ -36,11 +36,10 @@
                 android:targetClass="com.oneplus.shit.settings.ScreenOffGestureSettings" />
     </Preference>
 
-    <!--<SwitchPreference
-        android:key="taptowake"
-        android:summary="@string/taptowake_summary"
-        android:title="@string/taptowake_title"
-        android:defaultValue="true" />-->
+    <SwitchPreference
+        android:key="dc_switch"
+        android:summary="@string/dcdimming_summary"
+        android:title="@string/dcdimming_title" />
 
     <PreferenceCategory
         android:title="@string/category_vibrator">

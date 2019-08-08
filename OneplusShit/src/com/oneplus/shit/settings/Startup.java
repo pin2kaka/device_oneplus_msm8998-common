@@ -85,6 +85,8 @@ public class Startup extends BroadcastReceiver {
         restore(OnePlusModeSwitch.getFile(), enabled);
         VibratorStrengthPreference.restore(context);
         DisplayCalibration.restore(context);
+        enabled = sharedPrefs.getBoolean(ShitPanelSettings.KEY_DC_SWITCH, false);
+        restore(DCDimmingSwitch.getFile(), enabled);
    }
 
     private boolean getPreferenceBoolean(Context context, String key, boolean defaultValue) {

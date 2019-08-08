@@ -46,6 +46,8 @@ import com.oneplus.shit.settings.R;
 public class ShitPanelSettings extends PreferenceActivity {
 
     public static final String KEY_VIBSTRENGTH = "vib_strength";
+  
+    public static final String KEY_DC_SWITCH = "dc_switch";
 
     /*public static final String KEY_TAPTOWAKE_SWITCH = "taptowake";*/
 
@@ -57,6 +59,8 @@ public class ShitPanelSettings extends PreferenceActivity {
     
     private VibratorStrengthPreference mVibratorStrength;
     private TwoStatePreference mHBMModeSwitch;
+
+    private TwoStatePreference mDc;
     
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -74,5 +78,7 @@ public class ShitPanelSettings extends PreferenceActivity {
         mHBMModeSwitch = (TwoStatePreference) findPreference(KEY_HBM_SWITCH);
         mHBMModeSwitch.setOnPreferenceChangeListener(new HBMModeSwitch());
 
-        }
+        mDc = (TwoStatePreference) findPreference(KEY_DC_SWITCH);
+        mDc.setEnabled(DCDimmingSwitch.isSupported());
+       }
 }

@@ -223,4 +223,7 @@
     <string name="toast_rot_90">Rotation 90 Deg</string>
     <string name="toast_rot_270">Rotation 270 Deg</string>
 
+    <string name="dcdimming_summary">Enable/Disable DC Dimming</string>
+    <string name="dcdimming_title">DC dimming</string>
+
 </resources>
