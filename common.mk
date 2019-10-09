@@ -404,7 +404,6 @@ PRODUCT_PACKAGES += \
 
 # IMS
 PRODUCT_PACKAGES += \
-    ims-ext-common \
     ims-ext-common_system \
     telephony-ext \
     ims_ext_common.xml \
